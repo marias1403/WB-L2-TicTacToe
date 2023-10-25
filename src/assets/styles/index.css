@@ -1,2 +1,33 @@
 @import url(../../vendor/normalize.css);
 @import url(../../vendor/fonts.css);
+
+@import url(./blocks/page/page.css);
+@import url(./blocks/page/__container/page__container.css);
+
+@import url(./blocks/page/__header/page__header.css);
+@import url(./blocks/header/__title/header__title.css);
+
+@import url(./blocks/content/content.css);
+@import url(./blocks/page/__content/page__content.css);
+@import url(./blocks/content/__section/content__section.css);
+
+@import url(./blocks/controls/controls.css);
+@import url(./blocks/controls/__row/controls__row.css);
+@import url(./blocks/controls/__row/_padding/controls__row_padding.css);
+@import url(./blocks/checkbox/checkbox.css);
+@import url(./blocks/controls/__label/controls__label.css);
+@import url(./blocks/controls/__subtitle/controls__subtitle.css);
+@import url(./blocks/controls/__checkbox-wrapper/controls__checkbox-wrapper.css);
+
+@import url(./blocks/game/game.css);
+@import url(./blocks/game-board/game-board.css);
+@import url(./blocks/game-board/__cell/game-board__cell.css);
+@import url(./blocks/game-board/__cell/_right/game-board__cell_right.css);
+@import url(./blocks/game-board/__cell/_bottom/game-board__cell_bottom.css);
+@import url(./blocks/game-board/__cell/_no-border/game-board__cell_no-border.css);
+@import url(./blocks/button/button.css);
+@import url(./blocks/game/__button/game__button.css);
+
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/page/__footer/page__footer.css);
+@import url(./blocks/footer/__text/footer__text.css);

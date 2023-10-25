@@ -9,7 +9,63 @@
 </head>
 <body class="page">
   <div class="page__container">
-
+    <header class="header page__header">
+      <h1 class="header__title">Крестики-нолики</h1>
+    </header>
+    <main class="content page__content">
+      <section class="controls content__section">
+        <div class="controls__row">
+          <div class="controls__checkbox-wrapper">
+            <div class="checkbox checkbox_position">
+              <input class="checkbox__input cart-items-list__checkbox" type="checkbox" id="player" checked>
+              <span class="checkbox__checkmark checkbox__checkmark_list"></span>
+            </div>
+            <label class="controls__label" for="player">Игрок против игрока</label>
+          </div>
+          <div class="controls__checkbox-wrapper">
+            <div class="checkbox checkbox_position">
+              <input class="checkbox__input cart-items-list__checkbox" type="checkbox" id="computer">
+              <span class="checkbox__checkmark checkbox__checkmark_list"></span>
+            </div>
+            <label class="controls__label" for="computer">Игрок против компьютера</label>
+          </div>
+        </div>
+        <h2 class="controls__subtitle">Выберите уровень сложности<br>для компьютера:</h2>
+        <div class="controls__row controls__row_padding">
+          <div class="controls__checkbox-wrapper">
+            <div class="checkbox checkbox_position">
+              <input class="checkbox__input cart-items-list__checkbox" type="checkbox" id="easy" checked>
+              <span class="checkbox__checkmark checkbox__checkmark_list"></span>
+            </div>
+            <label class="controls__label" for="easy">Простой</label>
+          </div>
+          <div class="controls__checkbox-wrapper">
+            <div class="checkbox checkbox_position">
+              <input class="checkbox__input cart-items-list__checkbox" type="checkbox" id="hard">
+              <span class="checkbox__checkmark checkbox__checkmark_list"></span>
+            </div>
+            <label class="controls__label" for="hard">Сложный</label>
+          </div>
+        </div>
+      </section>
+      <section class="game content__section">
+        <div class="game-board" id="game-board">
+          <div class="game-board__cell" data-cell></div>
+          <div class="game-board__cell" data-cell></div>
+          <div class="game-board__cell game-board__cell_right" data-cell></div>
+          <div class="game-board__cell" data-cell></div>
+          <div class="game-board__cell" data-cell></div>
+          <div class="game-board__cell game-board__cell_right" data-cell></div>
+          <div class="game-board__cell game-board__cell_bottom" data-cell></div>
+          <div class="game-board__cell game-board__cell_bottom" data-cell></div>
+          <div class="game-board__cell game-board__cell_no-border" data-cell></div>
+        </div>
+        <button class="button game__button">Новая игра</button>
+      </section>
+    </main>
+    <footer class="footer page__footer">
+      <p class="footer__text">Игра «Крестики-нолики», Архипова Мария для WB</p>
+    </footer>
   </div>
 </body>
 </html>
