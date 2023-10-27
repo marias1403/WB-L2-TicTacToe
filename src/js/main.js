@@ -35,12 +35,22 @@ document.addEventListener('DOMContentLoaded', () => {
     if (winningCombination) {
       isGameActive = false;
       message.textContent = `${currentPlayer} победил!`;
-      grid[winningCombination[0]].style.backgroundColor = "#DEFFF0";
-      grid[winningCombination[0]].style.border = "none";
-      grid[winningCombination[1]].style.backgroundColor = "#DEFFF0";
-      grid[winningCombination[1]].style.border = "none";
-      grid[winningCombination[2]].style.backgroundColor = "#DEFFF0";
-      grid[winningCombination[2]].style.border = "none";
+      if (currentPlayer === 'X') {
+        grid[winningCombination[0]].style.backgroundColor = "#DEFFF0";
+        grid[winningCombination[0]].style.border = "none";
+        grid[winningCombination[1]].style.backgroundColor = "#DEFFF0";
+        grid[winningCombination[1]].style.border = "none";
+        grid[winningCombination[2]].style.backgroundColor = "#DEFFF0";
+        grid[winningCombination[2]].style.border = "none";
+      } else {
+        message.style.color = '#E85AAD';
+        grid[winningCombination[0]].style.backgroundColor = "#FFEFF7";
+        grid[winningCombination[0]].style.border = "none";
+        grid[winningCombination[1]].style.backgroundColor = "#FFEFF7";
+        grid[winningCombination[1]].style.border = "none";
+        grid[winningCombination[2]].style.backgroundColor = "#FFEFF7";
+        grid[winningCombination[2]].style.border = "none";
+      }
     }
 
     if (![...cells].some((cell) => !cell)) {
