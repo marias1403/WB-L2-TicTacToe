@@ -5,6 +5,21 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-right: 1px solid #D0D7DE;
-  border-bottom: 1px solid #D0D7DE;
+  border: 1px solid #D8DEE4;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.game-board__cell_type_o {
+  background-image: url("../../../../img/o_figure.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 15px;
+}
+
+.game-board__cell_type_x {
+  background-image: url("../../../../img/x_figure.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 15px;
 }

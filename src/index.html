@@ -17,14 +17,14 @@
         <div class="controls__row">
           <div class="controls__checkbox-wrapper">
             <div class="checkbox checkbox_position">
-              <input class="checkbox__input cart-items-list__checkbox" type="checkbox" id="player" checked>
+              <input class="checkbox__input cart-items-list__checkbox" type="radio" id="player" name="mode" value="human" checked>
               <span class="checkbox__checkmark checkbox__checkmark_list"></span>
             </div>
             <label class="controls__label" for="player">Игрок против игрока</label>
           </div>
           <div class="controls__checkbox-wrapper">
             <div class="checkbox checkbox_position">
-              <input class="checkbox__input cart-items-list__checkbox" type="checkbox" id="computer">
+              <input class="checkbox__input cart-items-list__checkbox" type="radio" id="computer" name="mode" value="computer">
               <span class="checkbox__checkmark checkbox__checkmark_list"></span>
             </div>
             <label class="controls__label" for="computer">Игрок против компьютера</label>
@@ -34,14 +34,14 @@
         <div class="controls__row controls__row_padding">
           <div class="controls__checkbox-wrapper">
             <div class="checkbox checkbox_position">
-              <input class="checkbox__input cart-items-list__checkbox" type="checkbox" id="easy" checked>
+              <input class="checkbox__input cart-items-list__checkbox" type="radio" id="easy" name="difficulty" value="random" checked>
               <span class="checkbox__checkmark checkbox__checkmark_list"></span>
             </div>
             <label class="controls__label" for="easy">Простой</label>
           </div>
           <div class="controls__checkbox-wrapper">
             <div class="checkbox checkbox_position">
-              <input class="checkbox__input cart-items-list__checkbox" type="checkbox" id="hard">
+              <input class="checkbox__input cart-items-list__checkbox" type="radio" id="hard" name="difficulty" value="smart">
               <span class="checkbox__checkmark checkbox__checkmark_list"></span>
             </div>
             <label class="controls__label" for="hard">Сложный</label>
@@ -49,18 +49,21 @@
         </div>
       </section>
       <section class="game content__section">
-        <div class="game-board" id="game-board">
-          <div class="game-board__cell" data-cell></div>
-          <div class="game-board__cell" data-cell></div>
-          <div class="game-board__cell game-board__cell_right" data-cell></div>
-          <div class="game-board__cell" data-cell></div>
-          <div class="game-board__cell" data-cell></div>
-          <div class="game-board__cell game-board__cell_right" data-cell></div>
-          <div class="game-board__cell game-board__cell_bottom" data-cell></div>
-          <div class="game-board__cell game-board__cell_bottom" data-cell></div>
-          <div class="game-board__cell game-board__cell_no-border" data-cell></div>
+        <div>
+          <p id="message"></p>
+          <div class="game-board" id="game-board">
+            <div class="game-board__cell" data-cell></div>
+            <div class="game-board__cell" data-cell></div>
+            <div class="game-board__cell" data-cell></div>
+            <div class="game-board__cell" data-cell></div>
+            <div class="game-board__cell" data-cell></div>
+            <div class="game-board__cell" data-cell></div>
+            <div class="game-board__cell" data-cell></div>
+            <div class="game-board__cell" data-cell></div>
+            <div class="game-board__cell" data-cell></div>
+          </div>
         </div>
-        <button class="button game__button">Новая игра</button>
+        <button id="start" class="button game__button">Новая игра</button>
       </section>
     </main>
     <footer class="footer page__footer">
