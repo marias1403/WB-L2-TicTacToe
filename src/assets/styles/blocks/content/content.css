@@ -1,5 +1,5 @@
 .content {
   display: grid;
   flex-shrink: 0;
-  grid-row-gap: 25px;
+  grid-row-gap: 15px;
 }

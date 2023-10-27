@@ -1,0 +1,10 @@
+.game__message {
+  margin: 0 0 15px 0;
+  padding: 0;
+  color: #37C6AB;
+  font-family: 'Geologica', Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+}

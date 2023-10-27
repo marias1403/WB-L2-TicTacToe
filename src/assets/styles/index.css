@@ -24,6 +24,7 @@
 @import url(./blocks/game-board/__cell/game-board__cell.css);
 @import url(./blocks/button/button.css);
 @import url(./blocks/game/__button/game__button.css);
+@import url(./blocks/game/__message/game__message.css);
 
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/page/__footer/page__footer.css);
