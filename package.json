@@ -5,11 +5,18 @@
   "main": "main.js",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marias1403/WB-L2-TicTacToe.git"
   },
   "keywords": [],
   "author": "Maria Arkhipova",
   "license": "ISC",
+  "homepage": "https://marias1403.github.io/WB-L2-TicTacToe",
   "devDependencies": {
     "@babel/core": "^7.23.2",
     "@babel/preset-env": "^7.23.2",
@@ -19,6 +26,7 @@
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
     "cssnano": "^6.0.1",
+    "gh-pages": "^6.0.0",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss-loader": "^7.3.3",
