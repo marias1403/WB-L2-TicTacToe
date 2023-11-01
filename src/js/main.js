@@ -112,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
       cell.classList.remove('game-board__cell_type_x');
       cell.classList.remove('game-board__cell_type_o');
       cell.style.backgroundColor = "";
+      cell.style.border = '1px solid #D8DEE4';
     });
     message.textContent = "";
     currentPlayer = "X";
